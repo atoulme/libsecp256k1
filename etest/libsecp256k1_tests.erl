@@ -76,7 +76,7 @@ sha256() ->
 	?assertEqual(DoubleHashed, libsecp256k1:sha256(libsecp256k1:sha256(A))),
 	?assertEqual(DoubleHashed, libsecp256k1:dsha256(A)).
 
-secp235k1_test_() -> 
+secp256k1_test_() -> 
   {foreach,
   fun start/0,
   fun stop/1,
